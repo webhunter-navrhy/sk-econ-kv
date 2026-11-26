@@ -1,0 +1,30 @@
+{
+  "slug": "sk-econ-kv",
+  "nazev": "ECON - KV, s.r.o.",
+  "url": "https://webhunter-navrhy.github.io/sk-econ-kv/",
+  "base": "/sk-econ-kv/",
+  "lang": "sk",
+  "popis": "Moderné účtovníctvo bez papierov v Starej Turej: podvojné účtovníctvo, mzdy, personalistika a dane cez Digitálnu kanceláriu. Účtovníčka s 32-ročnou praxou.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "placeholder.jpg",
+  "logo": "",
+  "theme_color": "#0f3d3e",
+  "typ": "AccountingService",
+  "ico": "36 349 496",
+  "kontakt": {
+    "email": "econkv@gmail.com",
+    "telefon": "+421 915 899 959",
+    "adresa": {"ulica": "Sadová 3015/31", "ulice": "Sadová 3015/31", "psc": "916 01", "mesto": "Stará Turá", "zeme": "SK"}
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {"endpoint": "", "demo": true, "predmet": "Dopyt z webu"},
+  "nav": [
+    {"text": "Digitálna kancelária", "href": "#kancelaria"},
+    {"text": "Služby", "href": "#sluzby"},
+    {"text": "O nás", "href": "#o-nas"},
+    {"text": "Kontakt", "href": "#kontakt"}
+  ]
+}

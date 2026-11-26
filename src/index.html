@@ -1,0 +1,83 @@
+{% extends "_base.html" %}
+{% set titulek = 'Moderné účtovníctvo bez papierov – ' ~ site.nazev ~ ', Stará Turá' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="stitok">Účtovníctvo · mzdy · dane</p>
+      <h1>Moderné účtovníctvo bez papierov</h1>
+      <p class="lead">Doklady odovzdáte online, prehľad o firme a úhradách faktúr máte kedykoľvek po ruke. My sa staráme o účtovníctvo, mzdy a dane.</p>
+      <p><a class="tlacidlo" href="#kontakt">Napíšte nám</a> <a class="odkaz" href="#kancelaria">Ako to funguje →</a></p>
+    </div>
+    <div class="okno" aria-hidden="true">
+      <div class="okno-lista"><i></i><i></i><i></i><span>Digitálna kancelária</span></div>
+      <ul>
+        <li><b>Faktúra prijatá</b><span>automaticky stiahnutá</span><em class="ok">✓</em></li>
+        <li><b>Pokladničný blok</b><span>naskenovaný mobilom</span><em class="ok">✓</em></li>
+        <li><b>Faktúra vystavená</b><span>prehľad úhrad</span><em class="ok">✓</em></li>
+        <li><b>Záväzky a pohľadávky</b><span>aktuálny stav</span><em class="ok">✓</em></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sekce" id="kancelaria">
+  <div class="wrap">
+    <h2>Jednoduché odovzdávanie dokladov</h2>
+    <p class="uvod">S nami nemusíte nosiť šanóny plné dokladov.</p>
+    <ol class="kroky" role="list">
+      <li><h3>Tuzemské e-faktúry</h3><p>Automaticky sa stiahnu do Digitálnej kancelárie.</p></li>
+      <li><h3>Ostatné faktúry a dokumenty</h3><p>Jednoducho ich nahráte alebo preposielate e-mailom priamo do Digitálnej kancelárie.</p></li>
+      <li><h3>Pokladničné bloky</h3><p>Naskenujete ich mobilným telefónom a doklady sa nahrajú do Digitálnej kancelárie.</p></li>
+      <li><h3>Všetko na jednom mieste</h3><p>Doklady máte bezpečne uložené a k dispozícii kedykoľvek ich potrebujete.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sekce tmava" id="vyhody">
+  <div class="wrap">
+    <h2>Prehľad o úhradách faktúr</h2>
+    <p class="uvod">V Digitálnej kancelárii máte online prístup k prehľadu vystavených a prijatých faktúr a k aktuálnemu stavu záväzkov a pohľadávok. Vaše financie máte pod kontrolou v aktuálnom čase, rýchlo, pohodlne a bez zbytočného papierovania.</p>
+    <ul class="vyhody" role="list">
+      <li>Elektronický obeh dokumentov</li>
+      <li>Online prehľad o firme a úhradách faktúr</li>
+      <li>Bezpečná archivácia dokladov</li>
+      <li>Online spolupráca s účtovníčkou</li>
+      <li>Menej administratívy a viac času na podnikanie</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekce" id="sluzby">
+  <div class="wrap">
+    <h2>S čím Vám pomôžeme</h2>
+    <ul class="sluzby" role="list">
+      {% for s in data.sluzby %}<li><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce svetla" id="o-nas">
+  <div class="wrap o-nas">
+    <div>
+      <h2>Účtovníctvu sa venujeme už 32 rokov</h2>
+      <p>Od roku 2005 podnikáme pod spoločnosťou ECON - KV, s.r.o. v Starej Turej. Spracovávame podvojné účtovníctvo, mzdy, personalistiku a dane a s klientmi dnes pracujeme v digitálnom štýle.</p>
+      <p>Konateľka spoločnosti: Andrea Biesová.</p>
+    </div>
+    <div class="fotka-miesto" aria-hidden="true"><span>Tu bude Vaša fotografia</span></div>
+  </div>
+</section>
+
+<section class="sekce" id="kontakt">
+  <div class="wrap kontakt">
+    <div>
+      <h2>Kontakt</h2>
+      <p><strong>{{ site.nazev }}</strong><br>{{ site.kontakt.adresa.ulica }}<br>{{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</p>
+      <p>IČO: {{ site.ico }}<br>IČ DPH: SK 2022094690</p>
+      <p><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a><br><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
+    </div>
+    <div>{% include "_formular.html" %}</div>
+  </div>
+</section>
+{% endblock %}
