@@ -1,0 +1,20 @@
+{
+  "znamka": 6,
+  "slabiny": [
+    "Sekce O nás (PC buňky 3–4, mobil 5–6): místo fotky je velký čárkovaný rámeček s nápisem „Tu bude Vaša fotografia“. Na webu, kde jinak není ani jedna fotka, tohle působí jako nedodělek. Oprava: dát sem skutečnou fotku kanceláře nebo konatelky Andrey Biesové z jejich webu či Google profilu. Když žádná není, rámeček odstranit a sekci postavit typograficky, třeba velkým rokem 2005, adresou Sadová 3015/31 a jménem konatelky, ať tam nezůstane prázdná plocha.",
+    "Sekce „Jednoduché odovzdávanie dokladov“ (PC buňka 2, mobil 2–3): čtyři stejné bílé karty s oranžovým číslováním 01–04. Je to zakázaný vzor a hned za ním následují další čtyři stejné sloupce v sekci „S čím Vám pomôžeme“, takže se stejná kostra opakuje dvakrát po sobě. Oprava: čísla 01–04 zrušit a odevzdávání dokladů ukázat jako jeden průběh od dokladu přes Digitálnu kanceláriu k účetní. Navázat to na kartu z hera, ať je koncept „bez papierov“ vidět i mimo hero. Služby pak dát do jiné skladby, třeba do seznamu s krátkými odstavci a linkami.",
+    "Hero na PC (buňka 1): v pravé půlce je malá karta UI a pod ní zůstává velká prázdná béžová plocha. Celý web je navíc bez jediného obrazu, jen Georgia a system-ui na béžové, takže vypadá jako šablona z Vila Anny v1 („jednoduchej, nezajímavej“). Oprava: kartu Digitálnej kancelárie zvětšit asi na 55 % šířky, doplnit ji skutečným dokladem nebo účtenkou s náhledem z mobilu a hero zkrátit tak, aby se další sekce ukázala nad ohybem. Dále ověřit, jestli má ECON - KV logo, a když ano, dát ho do hlavičky místo textového názvu."
+  ],
+  "zavazne": [
+    "O nás (PC i mobil): prázdný rámeček s textem „Tu bude Vaša fotografia“ místo fotky. Je to prázdná, nedodělaná sekce, kterou klient uvidí na první pohled.",
+    "O nás (mobil buňka 5): nadpis „Účtovníctvu sa venujeme už 32 rokov“ se nedá ověřit, brief chybí. Hned pod ním stojí „Od roku 2005 podnikáme“, což dává 21 let, takže se ty dva údaje zdánlivě bijí. Údaj 32 let doložit z webu nebo ARES, jinak ho odstranit."
+  ],
+  "silne": [
+    "Jasné sdělení do 5 sekund: účtovníctvo, mzdy a dane bez papierov v Starej Turej, CTA „Napíšte nám“ vlevo v heru.",
+    "Kontakt je úplný a skutečný: adresa, IČO, IČ DPH, e-mail, telefon a formulář. Nic nepřetéká na žádné z šesti šířek.",
+    "Klidná světlá paleta (tmavě zelená a jeden zlatý akcent) a slušná hierarchie nadpisů. Georgia má správnou slovenskou diakritiku.",
+    "Karta „Digitálna kancelária“ v heru je dobrý zárodek konceptu, který vychází přímo z toho, co firma nabízí."
+  ],
+  "verdikt": "Web je korektní a čitelný, ale bez jediné fotky, s prázdným placeholderem v O nás a s číslovanými kartami 01–04 působí jako nedodělaná šablona. Je potřeba ho opravit: doplnit obraz nebo odstranit placeholder, ověřit údaj „32 rokov“ a koncept „bez papierov“ protáhnout i do dalších sekcí.",
+  "_hash": "40a35b34ddde6b55e989f4930e35dc7fbc2ad73f"
+}
