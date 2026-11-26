@@ -1,18 +1,17 @@
 {
-  "znamka": 5,
+  "znamka": 7,
   "slabiny": [
-    "Hero na mobilu (390/360 px, buňka 1): karta Digitálnej kancelárie stojí vedle textu a ořízne ji pravý okraj obrazovky. Je vidět jen „Dig… kan…“, „Faktú… prijata“, „Poklad… blok“ a nadpis se kvůli tomu láme do úzkého sloupce na 4 řádky. Oprava: pod 768 px kartu přesunout pod CTA na plnou šířku (grid-template-columns: 1fr) a nadpis i text pustit přes celou šířku.",
-    "Hero na PC (buňka 1) a celý web: karta má pořád jen asi 39 % šířky, chybí v ní doklad nebo účtenka s náhledem z mobilu a na celé stránce není jediný obraz (QA: 0 obrázků). V hlavičce je dál jen textový název, chybí ověření loga. Oprava: kartu zvětšit asi na 55 % a vedle seznamu přidat stylizovanou účtenku nebo PDF fakturu se stavem „naskenované mobilom“. Na jejich starém webu nebo v Google profilu dohledat logo a dát ho vlevo do hlavičky.",
-    "O nás (PC buňka 4, mobil 4–5): nadpis „32 rokov v účtovníctve“ a text „Účtovníctvu sa venujeme 32 rokov“ nemají zdroj, protože brief chybí. Formulace už nekoliduje s rokem 2005, ale údaj je doložený jen v site.json. Oprava: doplnit brief.json se zdrojem (citace z jejich webu). Když se zdroj nenajde, nadpis postavit na „Od roku 2005 v Starej Turej“ a 32 let vypustit."
+    "Hero na PC (buňka 1): výtka z minulého kola je opravená jen napůl. Karta Digitálnej kancelárie je větší (asi polovina obsahové šířky), ale pořád v ní chybí doklad a celá stránka nemá jediný obraz (QA: 0 obrázků). Oprava: přes pravý dolní roh karty položit stylizovanou účtenku nebo PDF fakturu, vykreslenou v CSS/SVG, se štítkem „naskenované mobilom“. Karta tak dostane hloubku a stránka aspoň jeden vizuální bod.",
+    "Sekce Jednoduché odovzdávanie dokladov na PC (buňka 2): svislá časová osa se 4 kroky zabírá jen levou polovinu a pravá polovina zůstává prázdná. Proto stránka působí jako dlouhý textový dokument. Oprava: od 1024 px osu rozložit vodorovně do 4 sloupců (krok → krok → krok → Všetko na jednom mieste), nebo vpravo dát jednoduché SVG schéma mobil → Digitálna kancelária → účtovníčka.",
+    "Pás Prehľad o úhradách faktúr na PC (buňky 2–3): 5 odrážek se láme do řady po 3 a pod ní řady po 2. Druhá řada visí vlevo a tmavý blok je zbytečně vysoký. Oprava: odrážky dát do mřížky 5 sloupců, nebo 3 + 2 se zarovnáním na střed, nebo počet upravit na 3 či 6."
   ],
-  "zavazne": [
-    "Hero na mobilu (390 i 360 px, první obrazovka): karta UI přesahuje za pravý okraj a ořízne se uprostřed slov („Faktú“, „Poklad“, „Dig kan“). Text hera se vedle ní mačká do úzkého sloupce. Působí to jako rozbitý layout na první obrazovce telefonu."
-  ],
+  "zavazne": [],
   "silne": [
-    "Placeholder fotky v sekci O nás je pryč. Sekce teď stojí typograficky na roce 2005, adrese Sadová 3015/31 a jménu konatelky Andrey Biesové, takže už nepůsobí jako nedodělek.",
-    "Odovzdávanie dokladov je teď jedna časová osa od e-faktúry k „Všetko na jednom mieste“ bez číslování 01–04. Navazuje na kartu z hera, takže koncept „bez papierov“ je vidět i mimo hero.",
-    "Služby jsou seznam s linkami a krátkými odstavci, tedy jiná skladba než osa nad nimi. Kontakty (IČO, IČ DPH, e-mail, telefon, adresa) jsou úplné, nic nepřetéká a stránka je lehká (0,01 MB)."
+    "Mobilní hero je opravené: karta je pod CTA přes celou šířku, nadpis i text mají celou šířku a QA hlásí 0 přetečení na všech 6 šířkách.",
+    "Údaj 32 rokov má teď zdroj v brief.json (citace z mailu konatelky). Rok 2005 a Stará Turá na to logicky navazují, nic není vymyšlené.",
+    "Logo je ověřené: klientka podle briefu nemá web ani logo, takže název textem vlevo v hlavičce je správně. Paleta je střídmá, světlá a odpovídá neutrálnímu zadání.",
+    "Koncept Digitálnej kancelárie se táhne přes hero, časovou osu dokladů i pás Prehľad o úhradách. Je jasné, co firma dělá. Kontakty s IČO, e-mailem a formulářem jsou kompletní."
   ],
-  "verdikt": "Všechny tři výtky ze skladby minulého kola jsou opravené. Na mobilu ale přibyla závažná vada: karta v heru je oříznutá za okrajem obrazovky a hero tak vypadá rozbitě. Navíc web stále nemá žádný obraz ani logo a údaj 32 let nemá doložený zdroj, takže verdikt je opravit.",
-  "_hash": "3268faaddae9d6cfce54d0ecb6c858efab680ccf"
+  "verdikt": "Závažné vady z minula jsou opravené (mobilní hero, zdroj pro 32 rokov, ověření loga). Web je funkční a pravdivý, ale bez jediného obrazu působí na PC jako prázdný textový dokument. Chybějící účtenka v hero je jediná napůl opravená výtka. Opravit, ne předělat.",
+  "_hash": "34a02157048027f4fcebaa1367958fd84e4a0fda"
 }

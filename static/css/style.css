@@ -128,3 +128,12 @@ a{color:var(--accent)}
 @media(max-width:800px){.sluzby-zoznam li{grid-template-columns:1fr}}
 .logo{display:inline-block;padding:.5rem 0}
 @media(max-width:800px){.hero-grid{grid-template-columns:1fr}}
+.okno{position:relative;margin-bottom:2.5rem}
+.uctenka{position:absolute;right:-.5rem;bottom:-2.2rem;width:10.5rem;background:#fff;border:1px solid var(--line);padding:.9rem .9rem 1rem;transform:rotate(3deg);box-shadow:0 14px 30px -14px rgba(15,61,62,.5);font-size:.8rem;display:grid;gap:.35rem;
+ clip-path:polygon(0 0,100% 0,100% 94%,92% 100%,84% 94%,76% 100%,68% 94%,60% 100%,52% 94%,44% 100%,36% 94%,28% 100%,20% 94%,12% 100%,4% 94%,0 100%)}
+.uctenka span{color:var(--muted)}.uctenka i{display:block;height:.35rem;background:var(--line);border-radius:2px}.uctenka i:nth-of-type(2){width:70%}.uctenka strong{color:var(--accent)}
+@media(min-width:1024px){
+.tok{display:grid;grid-template-columns:repeat(4,1fr);border-left:0;border-top:3px solid var(--amber);margin-left:0!important;gap:0 1.5rem}
+.tok li{padding:2rem 0 0;max-width:none}.tok li::before{left:0;top:-.7rem}}
+.vyhody{grid-template-columns:repeat(5,1fr)}
+@media(max-width:1023px){.vyhody{grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))}}

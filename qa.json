@@ -2,9 +2,7 @@
   "url": "https://webhunter-navrhy.github.io/sk-econ-kv/",
   "ok": true,
   "chyby": [],
-  "varovani": [
-    "Dotykové cíle <40 px na mobilu: 1× (např. a.logo \"ECON - KV, s.r.o.\" 176×32)"
-  ],
+  "varovani": [],
   "metriky": {
     "sirky": {
       "1440": {
@@ -35,7 +33,7 @@
     "preneseno_PC_MB": 0.01,
     "snimku_PC": 4,
     "preneseno_mobil_MB": 0.01,
-    "snimku_mobil": 5,
+    "snimku_mobil": 6,
     "seo": {
       "title": "Moderné účtovníctvo bez papierov – ECON - KV, s.r.o., Stará Turá",
       "description": "Moderné účtovníctvo bez papierov v Starej Turej: podvojné účtovníctvo, mzdy, personalistika a dane c",
@@ -50,7 +48,7 @@
       "canonical": true,
       "viewport": true
     },
-    "maly_dotykovy_cil": 1,
+    "maly_dotykovy_cil": 0,
     "font_nadpis": "Georgia",
     "font_text": "system-ui",
     "podstranky": {
